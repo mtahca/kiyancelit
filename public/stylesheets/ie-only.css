@@ -1,0 +1,20 @@
+/* For IE browsers less than version 9 */
+
+/* Portfolio */
+.portfolio-bg {display:none !important;}
+.portfolio-zoom,
+.portfolio-link {display: none !important;}
+.portfolio-item:hover .portfolio-zoom,
+.portfolio-item:hover .portfolio-link {display:block !important;}
+
+.flex-direction-nav .flex-next {right: 0 !important; }
+.flex-direction-nav .flex-prev {left: 0 !important;}
+
+/* Search form */
+.search-form {width: 265px !important;}
+.search-btn,
+.search-btn:active {display: inline !important;}
+
+/* Footer */
+.flickr-bg,
+.flickr-zoom {display:none !important;}
