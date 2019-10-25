@@ -1,2 +1,6 @@
 # Redirects from what the browser requests to what we serve
-/*             /index.html
+/home              /
+/foto              /foto
+/teknik            /teknik
+/kat               /kat
+/iletisim          /iletisim
