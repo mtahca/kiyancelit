@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
 import './App.css';
-import Ust from "./components/Ust";
-import Footer from "./components/Footer";
 const IMAGES =
         [{
                 src: "./galeri/kiyancelit01.jpg",
@@ -129,20 +127,15 @@ const IMAGES =
 class Foto extends Component {
         render() {
                 return (
-                        <div className="App">
-                                <Ust />
-                                <div className="container box sub">
-                                        <header className="sixteen columns sub-header">
-                                                <div className="eight columns alpha">
-                                                        <h3>FOTO GALERİ</h3>
-                                                </div>
-                                        </header>
-                                        <section className="sixteen columns">
-                                                <Gallery images={IMAGES} rowHeight={123} margin={10} />
-                                        </section>
-                                </div>
-                                <Footer />
-
+                        <div className="container box sub">
+                                <header className="sixteen columns sub-header">
+                                        <div className="eight columns alpha">
+                                                <h3>FOTO GALERİ</h3>
+                                        </div>
+                                </header>
+                                <section className="sixteen columns">
+                                        <Gallery images={IMAGES} rowHeight={123} margin={10} />
+                                </section>
                         </div>
                 );
         }

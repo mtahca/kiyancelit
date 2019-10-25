@@ -1,27 +1,36 @@
 import React, { Component } from 'react';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './App.css';
-import Ust from "./components/Ust";
-import News from "./components/News";
-import Callout from "./components/Callout";
-import Footer from "./components/Footer";
-import Slider from './components/Slider';
+import Layout from "./Layout";
+import Home from "./Home";
+import Foto from './Foto'
+import Teknik from './Teknik'
+import Kat from './Kat'
+import Iletisim from './Iletisim'
+import Notfound from './Notfound'
 
-class App extends Component {
+
+
+
+export default class App extends Component {
   render() {
     return (
-            <div className="App">
-            <Ust/>
-            <div className="container box">
-            <div className="slider-container sixteen-columns">
-            <Slider/>
-            </div>
-            <News/>
-            <Callout/>
-            </div>
-            <Footer/>
-            
-            </div>         
+
+      <div className="App">
+        <Layout>
+          <Router>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='foto' component={Foto} />
+              <Route path='teknik' component={Teknik} />
+              <Route path='kat' component={Kat} />
+              <Route path='iletisim' component={Iletisim} />
+              <Route path='foto' component={Foto} />
+              <Route component={Notfound} />
+            </Switch>
+          </Router>
+        </Layout>
+      </div>
     );
   }
 }
-export default App;
