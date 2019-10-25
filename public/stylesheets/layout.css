@@ -862,7 +862,7 @@ ul.tweet_list li{
 
 /* #Misc
 ================================================== */
-.map {height: 250px; width:100%;}
+.map {width:100%;}
 
 .the-icons{list-style-type:none;margin:0}
 .the-icons li{
