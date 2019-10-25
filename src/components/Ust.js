@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 export default class Ust extends Component {
+
   render() {
     return (
       <div className="container box">
@@ -12,14 +14,14 @@ export default class Ust extends Component {
         </div>
         <nav className="eleven columns main-nav" id="nav">
           <ul className="sf-menu">
-            <li>ANASAYFA</li>
-            <li>FOTO GALERİ</li>
-            <li>TEKNİK ŞARTNAME</li>
-            <li>KAT PLANLARI</li>
-            <li>İLETİŞİM</li>
+            <Link to="/"><li>ANASAYFA</li></Link>
+            <Link to="/foto"> <li>FOTO GALERİ</li></Link>
+            <Link to="/teknik"> <li>TEKNİK ŞARTNAME</li></Link>
+            <Link to="/kat"><li>KAT PLANLARI</li></Link>
+            <Link to="/iletisim"><li>İLETİŞİM</li></Link>
           </ul>
         </nav>
-      </div>
+      </div >
     )
   }
 }
