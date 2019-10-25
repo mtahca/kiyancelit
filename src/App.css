@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url("/images/bg.jpg");
 }
 
 .App-logo {
@@ -19,4 +20,8 @@
 
 .App-link {
   color: #09d3ac;
+}
+.slider-container {
+  margin: 0px 10px 0px 0px;
+  padding-top: 10px;
 }
