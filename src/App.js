@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom'
 import './App.css';
-import Ust from "./components/Ust";
-import News from "./components/News";
-import Callout from "./components/Callout";
-import Footer from "./components/Footer";
-import Slider from './components/Slider';
+import Layout from "./Layout";
+import Home from "./Home";
+import Foto from './Foto'
+import Teknik from './Teknik'
+import Kat from './Kat'
+import Iletisim from './Iletisim'
 
-class App extends Component {
+
+export default class App extends Component {
+
   render() {
     return (
-            <div className="App">
-            <Ust/>
-            <div className="container box">
-            <div className="slider-container sixteen-columns">
-            <Slider/>
-            </div>
-            <News/>
-            <Callout/>
-            </div>
-            <Footer/>
-            
-            </div>         
+      <Layout>
+
+        <Route exact path='/' component={Home} />
+        <Route path='/foto' component={Foto} />
+        <Route path='/teknik' component={Teknik} />
+        <Route path='/kat' component={Kat} />
+        <Route path='/iletisim' component={Iletisim} />
+
+      </Layout>
     );
   }
 }
-export default App;

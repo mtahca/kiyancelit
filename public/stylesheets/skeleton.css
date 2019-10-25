@@ -20,6 +20,11 @@
 
 /* #Base 960 Grid
 ================================================== */
+.slider-container {
+    margin: 0px 10px 0px 0px;
+    padding-top: 10px;
+}
+   
 
     .container                                  { position: relative; width: 980px; margin: 0 auto; padding: 0 0 0 10px; }
     .container .column,
