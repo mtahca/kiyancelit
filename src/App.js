@@ -9,28 +9,23 @@ import Kat from './Kat'
 import Iletisim from './Iletisim'
 import Notfound from './Notfound'
 
-
-
-
 export default class App extends Component {
   render() {
     return (
 
-      <div className="App">
-        <Layout>
-          <Router>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='foto' component={Foto} />
-              <Route path='teknik' component={Teknik} />
-              <Route path='kat' component={Kat} />
-              <Route path='iletisim' component={Iletisim} />
-              <Route path='foto' component={Foto} />
-              <Route component={Notfound} />
-            </Switch>
-          </Router>
-        </Layout>
-      </div>
+      <Layout>
+        <Router>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='foto' component={Foto} />
+            <Route path='teknik' component={Teknik} />
+            <Route path='kat' component={Kat} />
+            <Route path='iletisim' component={Iletisim} />
+            <Route path='foto' component={Foto} />
+            <Route component={Notfound} />
+          </Switch>
+        </Router>
+      </Layout>
     );
   }
 }

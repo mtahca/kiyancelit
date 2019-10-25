@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
 
 export default class Ust extends Component {
   render() {
@@ -11,9 +10,6 @@ export default class Ust extends Component {
         <div className="sixteen columns">
           <hr />
         </div>
-        {/* sdfsf    */}
-
-        {/* czczc */}
         <nav className="eleven columns main-nav" id="nav">
           <ul className="sf-menu">
             <li>ANASAYFA</li>
