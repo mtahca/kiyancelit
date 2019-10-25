@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
 export default class Ust extends Component {
-
+  componentDidMount() {
+    window.selectnav();
+  }
   render() {
     return (
       <div className="container box">
