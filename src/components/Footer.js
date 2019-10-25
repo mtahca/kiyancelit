@@ -12,7 +12,7 @@ export default class Footer extends Component {
 					<ul className="footer-nav">
 						<li>
 							<a href="http://www.teknofikir.com"
-							><img src="images/teknofikir.png" /></a>
+							><img src="images/teknofikir.png" alt="teknofikir"/></a>
 						</li>
 					</ul>
 				</section>

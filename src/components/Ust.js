@@ -9,7 +9,7 @@ export default class Ust extends Component {
     return (
       <div className="container box">
         <div className="sixteen columns">
-          <img src="images/elitlogo01.jpg" alt="Kıyanç Elit Residence" />
+          <img src="images/elitlogo01.jpg" alt="Kıyanç Elit Residence" className="logo" />
         </div>
         <div className="sixteen columns">
           <hr />
